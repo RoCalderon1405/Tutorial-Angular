@@ -1,8 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from './models/product.model';
+import { ProductComponent } from './components/product/product.component';
 
 @Component({
+  standalone: true,
+  imports: [ ProductComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
